@@ -1,6 +1,6 @@
 {
-  "short_name": "UBAM",
-  "name": "UB Asset Management",
+  "short_name": "MON",
+  "name": "MON Asset Management",
   "icons": [
     {
       "src": "icon.png",
@@ -9,6 +9,6 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "background_color": "#f8f8f8",
+  "theme_color": "#940000"
 }

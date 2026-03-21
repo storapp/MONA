@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Client Portal - MON Private Wealth Management</title>
+    <meta name="description" content="Secure client portal for MON Asset Management private wealth clients. Access your portfolio performance, statements, and exclusive research." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bulma.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="hero is-medium">
+      <div class="ubam-header">
+          <!-- Hero head: will stick at the top -->
+          <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                  <img class="header-logo" src="img/ubam-logo.png" alt="Logo" />
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-start">
+                  <span class="navbar-item">
+                    <a class="lng-btn" href="mn.html">
+                      <span class="icon">
+                        <img src="img/mongolia.svg" alt="" />
+                      </span>
+                      <span>MN</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="lng-btn lng-btn-is-active" href="index.html">
+                      <span class="icon">
+                        <img src="img/icons8-australia-48.png" alt="" width="15"/>
+                      </span>
+                      <span>EN</span>
+                    </a>
+                  </span>
+                  <span class="navbar-item">
+                    <a class="lng-btn" href="jp.html">
+                      <span class="icon">
+                        <img src="img/japan.svg" alt="" />
+                      </span>
+                      <span>JP</span>
+                    </a>
+                  </span>
+                </div>
+                <div class="navbar-end">
+                  <a class="navbar-item" href="about.html">About</a>
+                  <a class="navbar-item" href="services.html">Services</a>
+                  <a class="navbar-item" href="portfolio.html">Portfolio</a>
+                  <a class="navbar-item" href="insights.html">Insights</a>
+                  <a class="navbar-item" href="contact.html">Contact</a>
+                  <span class="navbar-item">
+                    <a class="login-btn login-btn-active" href="client-portal.html">
+                      <span>Client Portal</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Hero content -->
+          <div class="hero-body">
+            <div class="container has-text-centered">
+            <h1 class="ubam-title">Client Portal</h1>
+            <h2 class="ubam-subtitle">Secure Access to Your Wealth Dashboard</h2>
+            <p class="hero-tagline">Real-time portfolio monitoring and exclusive research</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Login Form / Dashboard -->
+    <section class="hero is-medium" style="background: #fff" id="loginSection">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-5">
+              <div class="login-card">
+                <div class="login-header">
+                  <h3>Secure Login</h3>
+                  <p>Access your private wealth dashboard</p>
+                </div>
+
+                <form id="loginForm" class="login-form">
+                  <div class="field">
+                    <label class="label">Client ID</label>
+                    <div class="control">
+                      <input class="input" type="text" id="clientId" placeholder="Enter your Client ID" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Password</label>
+                    <div class="control">
+                      <input class="input" type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        Remember this device for 30 days
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <button class="button primary-cta is-fullwidth" type="submit">
+                        Access Portfolio
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="login-footer">
+                  <a href="#" class="forgot-password">Forgot your password?</a>
+                  <p class="security-notice">Protected by 256-bit SSL encryption</p>
+                </div>
+              </div>
+
+              <div class="security-badges">
+                <div class="security-badge">
+                  <span>●</span>
+                  <span>Bank-level Security</span>
+                </div>
+                <div class="security-badge">
+                  <span>●</span>
+                  <span>Two-Factor Authentication</span>
+                </div>
+                <div class="security-badge">
+                  <span>●</span>
+                  <span>Real-time Data</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-6 is-offset-1">
+              <div class="portal-features">
+                <h4>What's in your dashboard</h4>
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <span class="feature-icon" style="color: #940000; font-weight: 700;">▲</span>
+                    <div>
+                      <h5>Live Portfolio Performance</h5>
+                      <p>Real-time valuations across all asset classes with attribution analysis</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon" style="color: #940000; font-weight: 700;">■</span>
+                    <div>
+                      <h5>Statements & Reports</h5>
+                      <p>Monthly statements, tax documents, and quarterly performance reviews</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon" style="color: #940000; font-weight: 700;">◆</span>
+                    <div>
+                      <h5>Exclusive Research</h5>
+                      <p>Access to our proprietary market insights and investment committee notes</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-icon" style="color: #940000; font-weight: 700;">●</span>
+                    <div>
+                      <h5>Secure Messaging</h5>
+                      <p>Direct communication with your dedicated advisory team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section (Hidden by default) -->
+    <section class="hero is-medium" style="background: #f8f9fa; display: none;" id="dashboardSection">
+      <div class="hero-body">
+        <div class="container">
+          <div class="dashboard-header">
+            <div class="welcome-message">
+              <h2>Welcome back, <span id="clientName">Client</span></h2>
+              <p>Last login: <span id="lastLogin">Today</span></p>
+            </div>
+            <button class="button is-small" onclick="logout()">Logout</button>
+          </div>
+
+          <!-- Portfolio Summary -->
+          <div class="dashboard-grid">
+            <div class="dashboard-card portfolio-summary">
+              <h4>Portfolio Summary</h4>
+              <div class="portfolio-value">
+                <span class="value">$12,450,000</span>
+                <span class="change positive">+2.4% MTD</span>
+              </div>
+              <div class="allocation-chart">
+                <div class="allocation-item">
+                  <span class="color-indicator" style="background: #4CAF50;"></span>
+                  <span>Equities 45%</span>
+                </div>
+                <div class="allocation-item">
+                  <span class="color-indicator" style="background: #2196F3;"></span>
+                  <span>Fixed Income 25%</span>
+                </div>
+                <div class="allocation-item">
+                  <span class="color-indicator" style="background: #FF9800;"></span>
+                  <span>Alternatives 20%</span>
+                </div>
+                <div class="allocation-item">
+                  <span class="color-indicator" style="background: #9E9E9E;"></span>
+                  <span>Cash 10%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card performance-metrics">
+              <h4>Performance Metrics</h4>
+              <div class="metric-row">
+                <span>YTD Return</span>
+                <span class="positive">+8.2%</span>
+              </div>
+              <div class="metric-row">
+                <span>1-Year Return</span>
+                <span class="positive">+12.4%</span>
+              </div>
+              <div class="metric-row">
+                <span>3-Year Annualized</span>
+                <span class="positive">+9.8%</span>
+              </div>
+              <div class="metric-row">
+                <span>Sharpe Ratio</span>
+                <span>1.42</span>
+              </div>
+            </div>
+
+            <div class="dashboard-card recent-activity">
+              <h4>Recent Activity</h4>
+              <div class="activity-item">
+                <span class="activity-date">Mar 18</span>
+                <span class="activity-description">Quarterly rebalancing completed</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-date">Mar 15</span>
+                <span class="activity-description">Dividend payment received</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-date">Mar 10</span>
+                <span class="activity-description">Monthly statement available</span>
+              </div>
+            </div>
+
+            <div class="dashboard-card quick-actions">
+              <h4>Quick Actions</h4>
+              <div class="action-buttons">
+                <button class="action-btn">View Detailed Performance</button>
+                <button class="action-btn">Download Statements</button>
+                <button class="action-btn">Message Advisor</button>
+                <button class="action-btn">Request Proposal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="hero" style="background: #393939">
+      <div class="hero-body">
+        <div class="container">
+          <div class="footer-content" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-bottom: 30px;">
+            <div class="footer-section">
+              <h4 style="color: #FFD700; font-size: 14px; margin-bottom: 15px;">MON Asset Management</h4>
+              <p style="color: #ccc; font-size: 11px;">Premier private wealth management for high net worth individuals and institutions.</p>
+            </div>
+            <div class="footer-section">
+              <h4 style="color: #FFD700; font-size: 14px; margin-bottom: 15px;">Quick Links</h4>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <a href="about.html" style="color: #ccc; font-size: 11px; text-decoration: none;">About</a>
+                <a href="services.html" style="color: #ccc; font-size: 11px; text-decoration: none;">Services</a>
+                <a href="portfolio.html" style="color: #ccc; font-size: 11px; text-decoration: none;">Portfolio</a>
+                <a href="insights.html" style="color: #ccc; font-size: 11px; text-decoration: none;">Insights</a>
+              </div>
+            </div>
+            <div class="footer-section">
+              <h4 style="color: #FFD700; font-size: 14px; margin-bottom: 15px;">Security & Compliance</h4>
+              <div class="credential-badges" style="justify-content: flex-start; margin: 0; flex-wrap: wrap;">
+                <div class="credential-badge" style="background: rgba(255, 255, 255, 0.1); color: #FFD700; border: 1px solid #FFD700; margin: 2px 4px 2px 0;">256-bit SSL</div>
+                <div class="credential-badge" style="background: rgba(255, 255, 255, 0.1); color: #FFD700; border: 1px solid #FFD700; margin: 2px 4px 2px 0;">SOC 2 Compliant</div>
+                <div class="credential-badge" style="background: rgba(255, 255, 255, 0.1); color: #FFD700; border: 1px solid #FFD700; margin: 2px 4px 2px 0;">ASIC Licensed</div>
+              </div>
+              <p style="color: #999; font-size: 9px; margin-top: 10px; font-style: italic;">Your data is protected with institutional-grade security protocols</p>
+            </div>
+          </div>
+          <hr style="border-color: #555; margin: 20px 0;">
+          <p style="text-align: center; color: #fff; font-size: 11px;">© 2024 MON Asset Management LLC. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/main.js"></script>
+
+    <!-- Client Portal Functionality -->
+    <script>
+      // Demo credentials for testing
+      const demoCredentials = {
+        'DEMO001': 'password123',
+        'CLIENT456': 'secure2024'
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Navbar burger functionality
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+
+        // Login form handling
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          const clientId = document.getElementById('clientId').value;
+          const password = document.getElementById('password').value;
+
+          // Demo authentication
+          if (demoCredentials[clientId] === password) {
+            // Store session
+            sessionStorage.setItem('clientLoggedIn', 'true');
+            sessionStorage.setItem('clientId', clientId);
+
+            // Show dashboard
+            showDashboard(clientId);
+          } else {
+            alert('Access restricted. Please contact your MON advisor for credentials.');
+          }
+        });
+
+        // Check if user is already logged in
+        if (sessionStorage.getItem('clientLoggedIn') === 'true') {
+          const clientId = sessionStorage.getItem('clientId');
+          showDashboard(clientId);
+        }
+      });
+
+      function showDashboard(clientId) {
+        document.getElementById('loginSection').style.display = 'none';
+        document.getElementById('dashboardSection').style.display = 'block';
+
+        // Update client name
+        document.getElementById('clientName').textContent = getClientName(clientId);
+
+        // Update last login
+        const now = new Date();
+        document.getElementById('lastLogin').textContent = now.toLocaleDateString() + ' at ' + now.toLocaleTimeString();
+      }
+
+      function logout() {
+        sessionStorage.removeItem('clientLoggedIn');
+        sessionStorage.removeItem('clientId');
+
+        document.getElementById('loginSection').style.display = 'block';
+        document.getElementById('dashboardSection').style.display = 'none';
+
+        // Clear form
+        document.getElementById('loginForm').reset();
+      }
+
+      function getClientName(clientId) {
+        const clientNames = {
+          'DEMO001': 'John Smith',
+          'CLIENT456': 'Sarah Johnson'
+        };
+        return clientNames[clientId] || 'Valued Client';
+      }
+
+      // Action button functionality
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('action-btn')) {
+          const action = e.target.textContent.trim();
+
+          switch(true) {
+            case action.includes('Detailed Performance'):
+              alert('Need access? Contact your advisor for dashboard permissions.');
+              break;
+            case action.includes('Download Statements'):
+              alert('Secure documents are available once your portal access is enabled.');
+              break;
+            case action.includes('Message Advisor'):
+              alert('Please reach out to your MON advisor directly to start a secure exchange.');
+              break;
+            case action.includes('Request Proposal'):
+              alert('Contact us to request a tailored investment proposal and portal login.');
+              break;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
